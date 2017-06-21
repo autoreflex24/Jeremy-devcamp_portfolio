@@ -1,3 +1,5 @@
 some content
 some more content
 last items
+[my-great-feature 66d0a5d] finished file feature
+ 1 file changed, 2 insertions(+)
