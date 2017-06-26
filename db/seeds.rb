@@ -18,7 +18,7 @@
       commodi consequatur? Quis autem vel eum iure
       reprehenderit qui in ea voluptate velit esse quam
       nihil molestiae consequatur, vel illum qui dolorem 
-      eum fugiat quo voluptas nulla pariatur?""
+      eum fugiat quo voluptas nulla pariatur?"
    )
 end
 
@@ -45,7 +45,8 @@ puts "5 skills created"
     Excepteur sint occaecat cupidatat non proident,
     sunt in culpa qui officia deserunt mollit anim id
     est laborum." ,
-    main_image:"http://placehold.it/600x400"  ,
-    tumb_image:"http://placehold.it/350x200"
+    main_image:"http://placehold.it/600x400",
+    thumb_image:"http://placehold.it/350x200"
     )
+  end
 puts "9 portfolio items created"
