@@ -39,7 +39,7 @@ class BlogsController < ApplicationController
 
   # PATCH/PUT /blogs/1
   # PATCH/PUT /blogs/1.json
-  def update
+ def update
     respond_to do |format|
       if @blog.update(blog_params)
         format.html { redirect_to @blog, notice: 'Blog was successfully updated.' }
@@ -48,7 +48,7 @@ class BlogsController < ApplicationController
         format.html { render :edit }
         format.json { render json: @blog.errors, status: :unprocessable_entity }
       end
-    end
+    end 
   end
 
   # DELETE /blogs/1
@@ -64,7 +64,7 @@ class BlogsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
-      @blog = Blog.find(params[:id])
+      @blog = Blog.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
