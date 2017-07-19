@@ -1,12 +1,10 @@
-class PagesController < ApplicationController
-  def home
-    @posts = Blog.all
-    @skills = Skill.all
-  end
-
+class DashboardController < ApplicationController
   def about
   end
 
   def contact
+  end
+
+  def home
   end
 end
