@@ -8,6 +8,7 @@ module SetSource
   def set_source
     session[:source] = params[:q] if params[:q]
   end
+<<<<<<< HEAD
 
   extend ActiveSupport::Concern  
 
@@ -20,4 +21,6 @@ module SetSource
   def set_source
     session[:source] = params[:q] if params[:q]
   end
+=======
+>>>>>>> view
 end

@@ -6,11 +6,16 @@
   <thead>
     <tr>
       <th>Blog Title</th>
+<<<<<<< HEAD
+=======
+      <th>Date</th>
+>>>>>>> view
       <th>Body</th>
       <th colspan="4"></th>
     </tr>
   </thead>
   <tbody>
+<<<<<<< HEAD
     <% @blogs.each do |blog| %>
       <tr>
         <td><%= blog.title %></td>
@@ -21,6 +26,9 @@
         <td><%= link_to 'Delete Post', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+=======
+   <%= render @blogs %>
+>>>>>>> view
   </tbody>
 </table>
 

@@ -13,6 +13,7 @@ module CurrentUserConcern
                   email: "guest@example.com"
                   )
 
+<<<<<<< HEAD
   
   def current_user
     super || guest_user
@@ -26,5 +27,7 @@ module CurrentUserConcern
                             )
 
   end
+=======
+>>>>>>> view
   end
 end
