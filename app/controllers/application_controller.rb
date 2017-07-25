@@ -4,10 +4,5 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   include DefaultPageContent
-  
-  before_filter :set_title
-  
-  def set_title
-    @page_title = "Devcamp Portfolio | My Portfolio Website"
-  end
+  byebug
 end
