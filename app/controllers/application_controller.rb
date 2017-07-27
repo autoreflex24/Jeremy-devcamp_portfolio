@@ -3,22 +3,19 @@ class ApplicationController < ActionController::Base
   include DeviseWhitelist
   include SetSource
   include CurrentUserConcern
-<<<<<<< HEAD
-
-  
-  before_action :set_title
-  
-  
-  def set_title
-    @page_title = "Devcamp Portfolio | Jeremy's Portfolio Website"
-=======
   include DefaultPageContent
   
-  before_filter :set_title
+  before_action :set_copyright
   
-  def set_title
-    @page_title = "Devcamp Portfolio | My Portfolio Website"
->>>>>>> view
+  def set_copyright
+    @copyright = DevcampViewTool::Renderer.copyright 'Jeremy Titensor', 'All Rights Reserved'
   end
 end
 
+module DevcampViewTool
+  class Renderer
+    def self.copyright name, msg
+      "&copy; #{Time.now.year} | <b>#{name}</b> #{msg}".html_safe
+    end
+  end
+end

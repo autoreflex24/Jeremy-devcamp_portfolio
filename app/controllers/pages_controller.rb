@@ -1,4 +1,4 @@
-class DashboardController < ApplicationController
+class PagesController < ApplicationController
   def about
   end
 
@@ -6,5 +6,7 @@ class DashboardController < ApplicationController
   end
 
   def home
+    @posts = Blog.all
+    @skills = Skill.all
   end
 end
