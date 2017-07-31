@@ -16,3 +16,8 @@ module ApplicationHelper
     end
   end
 end
+
+  def copyright_generator
+    JeremyViewTool::Renderer.copyright 'Jeremy Titensor', 'All Rights Reserved'
+  end
+end
